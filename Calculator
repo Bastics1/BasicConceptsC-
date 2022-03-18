@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Calculator {
+    class Program {
+        static void Main(string[] args) {
+            int number = 0;
+            int numPow = 0;
+            int bufNum = 0;
+            Console.WriteLine("Введите число A");
+            number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число N");
+            numPow = Convert.ToInt32(Console.ReadLine());
+            bufNum = number;
+            for (int counter = 1; counter < numPow; ++counter) {
+                number = number * bufNum;
+             }
+            Console.WriteLine("Число A в степени N равно " + number);
+            Console.ReadKey();
+        }
+    }
+}
