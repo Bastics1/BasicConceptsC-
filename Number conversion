@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace number_conversion {
     class Program {
         static void Main(string[] args) {
-            string number = Console.ReadLine();
-            number += number.Substring(1, 1);
-            number = number.Remove(1, 1);
-            Console.WriteLine(number);
+            string Number = Console.ReadLine();
+            Number += Number.Substring(1, 1);
+            Number = Number.Remove(1, 1);
+            Console.WriteLine(Number);
             Console.ReadKey(); 
         }
     }
