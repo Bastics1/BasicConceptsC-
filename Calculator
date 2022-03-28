@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 namespace Calculator {
     class Program {
         static void Main(string[] args) {
-            int number = 0;
-            int numPow = 0;
-            int bufNum = 0;
+            int Number = 0;
+            int NumPow = 0;
+            int BufNum = 0;
             Console.WriteLine("Введите число A");
-            number = Convert.ToInt32(Console.ReadLine());
+            Number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Введите число N");
-            numPow = Convert.ToInt32(Console.ReadLine());
-            bufNum = number;
-            for (int counter = 1; counter < numPow; ++counter) {
-                number = number * bufNum;
+            NumPow = Convert.ToInt32(Console.ReadLine());
+            BufNum = Number;
+            for (int Counter = 1; Counter < NumPow; Counter++) {
+                Number = Number * BufNum;
              }
-            Console.WriteLine("Число A в степени N равно " + number);
+            Console.WriteLine("Число A в степени N равно " + Number);
             Console.ReadKey();
         }
     }
